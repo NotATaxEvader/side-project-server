@@ -1,0 +1,27 @@
+{
+  "name": "Altitude: Fullstack Flight Booking Website",
+  "version": "1.0.0",
+  "description": "mcp-side-project",
+  "license": "ISC",
+  "authors": "Erol Babas, Jedidia Omison, Carl Limjoco, Kiara Valencia",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "check": "find . -path './node_modules' -prune -o -name '*.js' -type f -exec node --check {} +",
+    "test": "node --test tests/*.test.js",
+    "set-admin": "node scripts/set-admin.js",
+    "migrate": "node scripts/migrate-legacy-data.js"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.9.1"
+  }
+}
