@@ -35,9 +35,6 @@ app.use("/airlines", airlineRoutes);
 app.use("/bookings", bookingRoutes);
 app.use("/payments", paymentRoutes);
 
-app.use((req, res) => {
-  res.status(404).json({ message: "API route not found" });
-});
 app.use(errorHandler);
 
 async function connectDatabase() {
